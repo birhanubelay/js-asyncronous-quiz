@@ -63,7 +63,7 @@ Output
    Output
     messages about student progress and student certificate(String)
 
-   5) Create a StockTracker class with a property watchlist (array of objects with symbol, threshold, currentPrice). Add a method updatePrice(symbol, newPrice) that updates the stock’s current price. Write an async method checkAlerts() 
+ 5) Create a StockTracker class with a property watchlist (array of objects with symbol, threshold, currentPrice). Add a method updatePrice(symbol, newPrice) that updates the stock’s current price. Write an async method checkAlerts() 
       that loops through the watchlist and returns a Promise resolving with a list of stocks where currentPrice >= threshold, or rejecting with "No alerts triggered".
    Input
      watchlist(array of objects with symbol(string), threshold(Integer), and currentPrice(Integer))
