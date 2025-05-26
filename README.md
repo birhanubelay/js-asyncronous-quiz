@@ -1,4 +1,5 @@
-JS Quiz
+#JS Quiz
+
 Pseudo-code
 1) Create a CustomerOrder class with properties: orderId (string), items (array of objects with name, quantity, price), and status (string). Add a method calculateTotal() that returns the total order amount. Write an async method processPayment() that simulates payment with a Promise that resolves after 2 seconds. After calling the method, change the status to "paid" and print a success message.
 Input
