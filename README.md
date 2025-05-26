@@ -49,4 +49,4 @@ Output
 
 4) Design a Course class with properties: title, instructor, and students (array of student objects with name and progress). Add a method updateProgress(studentName, value) that modifies the student’s progress. Create an async method generateCertificate(studentName) that returns a Promise resolving only if the progress is 100, otherwise reject with "Incomplete progress".
    Input
-     
+     title(string), instructor(String), and students(array of objects with name(String) and progress)
