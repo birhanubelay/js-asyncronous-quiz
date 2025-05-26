@@ -1,4 +1,3 @@
-# js-asyncronous-quiz
 Pseudo-code
 1) Create a CustomerOrder class with properties: orderId (string), items (array of objects with name, quantity, price), and status (string). Add a method calculateTotal() that returns the total order amount. Write an async method processPayment() that simulates payment with a Promise that resolves after 2 seconds. After calling the method, change the status to "paid" and print a success message.
 Input
@@ -50,3 +49,20 @@ Output
 4) Design a Course class with properties: title, instructor, and students (array of student objects with name and progress). Add a method updateProgress(studentName, value) that modifies the student’s progress. Create an async method generateCertificate(studentName) that returns a Promise resolving only if the progress is 100, otherwise reject with "Incomplete progress".
    Input
      title(string), instructor(String), and students(array of objects with name(String) and progress)
+   Process
+     step1: Create an object called Course with attributes  title, instructor, and students.
+     step2: Create a method called updateProgress which takes in studentName and value as a parameters.
+     step3: Iterate through the array of students.
+     step4: Check if a student found in students
+     step4: Add a value to a studentprogress if a student is found.
+     step5: Return a message which includes student name and the updated progress, otherwise return student not found.
+     step6: Create another method called generateCertificate which takes in student name as a parameter.
+     step7: Iterate through the array of students.
+     step8: Check if student is found and student progress value is equal to 100.
+     step9: If step8 is true return a message to confirm generated certificate, otherwise return Incomplete progress after half second.
+   Output
+    messages about student progress and student certificate(String)
+
+   5) Create a StockTracker class with a property watchlist (array of objects with symbol, threshold, currentPrice). Add a method updatePrice(symbol, newPrice) that updates the stock’s current price. Write an async method checkAlerts() 
+      that loops through the watchlist and returns a Promise resolving with a list of stocks where currentPrice >= threshold, or rejecting with "No alerts triggered".
+   
