@@ -65,4 +65,17 @@ Output
 
    5) Create a StockTracker class with a property watchlist (array of objects with symbol, threshold, currentPrice). Add a method updatePrice(symbol, newPrice) that updates the stock’s current price. Write an async method checkAlerts() 
       that loops through the watchlist and returns a Promise resolving with a list of stocks where currentPrice >= threshold, or rejecting with "No alerts triggered".
-   
+   Input
+     watchlist(array of objects with symbol(string), threshold(Integer), and currentPrice(Integer))
+   Process
+     step1: Create an object called StockTracker with attribute watchlist.
+     step2: Create a method called updatedPrice which takes in symbol and newPrice as parameters.
+     step3: Iterate through watchlist.
+     step4: If symbol found in the watchlist symbol update the price and return a message about the symol and the updated price, otherwise return symbol not found in watchlist symbol.
+     step5: Create another method called checkAlerts.
+     step6: Iterate through the watchlist.
+     step7: Check each symbol which meet the trigger condition.
+     step8: Check if the current price is greater than threshold.
+     step9: If true return the alerts triggered message, otherwise  return "No alerts triggered"
+  Output
+   message(String)
